@@ -39,14 +39,27 @@ int main() {
    
    
     printf("Carta: 2\n");
+    
     printf("Estado B: PE\n");
+    scanf("%s", &EstadoB);
+    
     printf("Código: B02 \n");
+    scanf("%s", &CodigodaCartaB02);
+    
     printf("Nome da Cidade: São Paulo\n");
+    scanf("%s", &NomedaCidadeB);
+    
     printf("População: 8.664.306 \n");
+    scanf("%d", &PopulacaoB);
+    
     printf("Área: 1.521,20km² \n");
+    scanf("%f", &AreaB);
+    
     printf("PIB:2.719.751.231,00 \n");
+    scanf("%f", &PIBB);
+    
     printf("Número de Pontos Turísticos: 36\n");
-
+    scanf("%d", &NumerodePontosTuristicosB);
 
 
     return 0;
