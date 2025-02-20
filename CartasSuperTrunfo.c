@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//Desafio Super Trunfo - Cadastro da cartas 
+//Desafio Super Trunfo - Cadastro da cartas (nível Novato).
 
 int main() {
     
@@ -16,7 +16,12 @@ int main() {
     float DensidadePopulacionalA, DensidadePopulacionalB;
     float PIBperCapitaA, PIBperCapitaB;
     
+    //Batalha de Cartas no Super Trunfo (Desafio Mestre).
+    float SuperPoderCartaA01;
+    float SuperPoderCartaB02;
     
+    
+    //Configurando Entrada e Saída de dados da primeira carta!(Nível Novato)
     printf("Bem vindo ao Jogo Super Trunfo!\n");
     
     
@@ -44,6 +49,8 @@ int main() {
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &NumerodePontosTuristicosA);
    
+    //Calculando entrada de informaçãoes e apresentado resultados Primeira Carta!(Nível Aventureiro).
+    
     DensidadePopulacionalA = (PopulacaoA + AreaA) / 2;
     
     printf("A densidade Populacional da primeira Cidade é: %f", DensidadePopulacionalA  );
@@ -52,6 +59,8 @@ int main() {
     
     printf("PIB per Capita da primeira Cidade é: %f", PIBperCapitaA );
 
+
+    //Configurando Entrada e Saída de dados da segunda carta!(Nível Novato)
     printf("Carta: 2\n");
     
     printf("Estado B: PE\n");
@@ -75,6 +84,8 @@ int main() {
     printf("Número de Pontos Turísticos: 36\n");
     scanf("%d", &NumerodePontosTuristicosB);
 
+    
+     //Calculando entrada de informaçãoes e apresentado resultados Segunda Carta!(Nível Aventureiro).
     DensidadePopulacionalB = (PopulacaoB + AreaB) / 2;
     
     printf("A Densidade Populacional da segunda Cidade é: %f", DensidadePopulacionalB);
@@ -83,7 +94,12 @@ int main() {
    
     printf("O PIB per Capita da segunda Cidade é: %f", PIBperCapitaB  );
    
+   //Batalha de Cartas no Super Trunfo/ Comparação entre Carta A01 e Carta B02 (Desafio Mestre).
+   printf("")
+    
    
    
-    return 0;
+   
+   
+   return 0;
 }
