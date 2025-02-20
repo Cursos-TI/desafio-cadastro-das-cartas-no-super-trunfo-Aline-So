@@ -11,8 +11,15 @@ int main() {
     float AreaA, AreaB;
     float PIBA, PIBB;
     int NumerodePontosTuristicosA, NumerodePontosTuristicosB;
-     
-    printf("Bem vindo ao cadastro das cartas do Jogo Super Trunfo!\n");
+    
+    //Calculando Densidade Populacional e PIB per Capita (desafio Aventureiro). 
+    float DensidadePopulacionalA, DensidadePopulacionalB;
+    float PIBperCapitaA, PIBperCapitaB;
+    
+    
+    printf("Bem vindo ao Jogo Super Trunfo!\n");
+    
+    
     
     printf("Carta: 1\n");
     
@@ -37,7 +44,14 @@ int main() {
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &NumerodePontosTuristicosA);
    
-   
+    DensidadePopulacionalA = (PopulacaoA + AreaA) / 2;
+    
+    printf("A densidade Populacional da primeira Cidade é: %f", DensidadePopulacionalA  );
+    
+    PIBperCapitaA = (PIBA + PopulacaoA) / 2;
+    
+    printf("PIB per Capita da primeira Cidade é: %f", PIBperCapitaA );
+
     printf("Carta: 2\n");
     
     printf("Estado B: PE\n");
@@ -61,6 +75,15 @@ int main() {
     printf("Número de Pontos Turísticos: 36\n");
     scanf("%d", &NumerodePontosTuristicosB);
 
-
+    DensidadePopulacionalB = (PopulacaoB + AreaB) / 2;
+    
+    printf("A Densidade Populacional da segunda Cidade é: %f", DensidadePopulacionalB);
+   
+    PIBperCapitaB = (PIBB + PopulacaoB)/ 2;
+   
+    printf("O PIB per Capita da segunda Cidade é: %f", PIBperCapitaB  );
+   
+   
+   
     return 0;
 }
