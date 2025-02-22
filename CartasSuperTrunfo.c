@@ -44,58 +44,70 @@ int main() {
     printf("PIB:");
     scanf("%f", &PIBA);
    
-    printf("Número de Pontos Turísticos: ");
+    printf("Número de Pontos Turísticos:");
     scanf("%d", &NumerodePontosTuristicosA);
    
     //Calculando entrada de informaçãoes e apresentado resultados Primeira Carta!(Nível Aventureiro).
     
-    DensidadePopulacionalA = (PopulacaoA + AreaA) / 2;
+    DensidadePopulacionalA = (PopulacaoA / AreaA);
     
-    printf("A densidade Populacional da primeira Cidade é: %f", DensidadePopulacionalA  );
+    printf("A densidade Populacional da primeira Cidade é: %f\n", DensidadePopulacionalA  );
     
-    PIBperCapitaA = (PIBA + PopulacaoA) / 2;
+    PIBperCapitaA = (PIBA / PopulacaoA);
     
-    printf("PIB per Capita da primeira Cidade é: %f", PIBperCapitaA );
+    printf("PIB per Capita da primeira Cidade é: %f\n", PIBperCapitaA);
 
 
     //Configurando Entrada e Saída de dados da segunda carta!(Nível Novato)
     printf("Carta: 2\n");
     
-    printf("Estado B: PE\n");
+    printf("Estado B:");
     scanf("%s", &EstadoB);
     
-    printf("Código: B02 \n");
+    printf("Código: ");
     scanf("%s", &CodigodaCartaB02);
     
-    printf("Nome da Cidade: São Paulo\n");
+    printf("Nome da Cidade: ");
     scanf("%s", &NomedaCidadeB);
     
-    printf("População: 8.664.306 \n");
+    printf("População: ");
     scanf("%d", &PopulacaoB);
     
-    printf("Área: 1.521,20km² \n");
+    printf("Área km²: ");
     scanf("%f", &AreaB);
     
-    printf("PIB:2.719.751.231,00 \n");
+    printf("PIB: ");
     scanf("%f", &PIBB);
     
-    printf("Número de Pontos Turísticos: 36\n");
+    printf("Número de Pontos Turísticos:\n");
     scanf("%d", &NumerodePontosTuristicosB);
 
     
      //Calculando entrada de informaçãoes e apresentado resultados Segunda Carta!(Nível Aventureiro).
-    DensidadePopulacionalB = (PopulacaoB + AreaB) / 2;
+    DensidadePopulacionalB = (PopulacaoB / AreaB);
     
-    printf("A Densidade Populacional da segunda Cidade é: %f", DensidadePopulacionalB);
+    printf("A Densidade Populacional da segunda Cidade é: %f\n", DensidadePopulacionalB);
    
-    PIBperCapitaB = (PIBB + PopulacaoB)/ 2;
+    PIBperCapitaB = (PIBB / PopulacaoB);
    
-    printf("O PIB per Capita da segunda Cidade é: %f", PIBperCapitaB  );
+    printf("O PIB per Capita da segunda Cidade é: %f\n", PIBperCapitaB  );
 
-    
+    //Tema 2 Nivel Novato
+    printf("***Carta com Maior Número de Pontos Turísticos Vence***\n");
+
+
+   if( NumerodePontosTuristicosA > NumerodePontosTuristicosB ){
+    printf("Carta 1 venceu!\n ");
+   } else{
+    printf("Carta 2 Venceu!\n ");
+   }
    
+   printf("Vence o País com menor Densidade Populacional\n");
    
-   
-   
+   if(DensidadePopulacionalA < DensidadePopulacionalB){
+    printf("Carta 1 Venceu:\n");
+   } else{
+    printf("Carta 2 Venceu:\n");
+   }
    return 0;
 }
