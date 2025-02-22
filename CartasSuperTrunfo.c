@@ -4,6 +4,8 @@
 
 int main() {
     
+
+    char Carta1, Carta2;
     char EstadoA, EstadoB;
     char CodigodaCartaA01, CodigodaCartaB02;
     char NomedaCidadeA, NomedaCidadeB;
@@ -15,10 +17,6 @@ int main() {
     //Calculando Densidade Populacional e PIB per Capita (desafio Aventureiro). 
     float DensidadePopulacionalA, DensidadePopulacionalB;
     float PIBperCapitaA, PIBperCapitaB;
-    
-    //Batalha de Cartas no Super Trunfo (Desafio Mestre).
-    float SuperPoderCartaA01;
-    float SuperPoderCartaB02;
     
     
     //Configurando Entrada e Saída de dados da primeira carta!(Nível Novato)
@@ -93,9 +91,7 @@ int main() {
     PIBperCapitaB = (PIBB + PopulacaoB)/ 2;
    
     printf("O PIB per Capita da segunda Cidade é: %f", PIBperCapitaB  );
-   
-   //Batalha de Cartas no Super Trunfo/ Comparação entre Carta A01 e Carta B02 (Desafio Mestre).
-   printf("")
+
     
    
    
